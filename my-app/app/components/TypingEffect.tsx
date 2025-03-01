@@ -2,24 +2,27 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-// I'm stopped here
-
 const TypingEffect = () => {
-    const [typing, setTyping] = useState("");
-    const [index, setIndex] = useState(0);
-    const myText: string = "godeff is Mehdi lol";
-    const destructuredText: string[] = myText.split("")
+    const [typing, setTyping] = useState<string>("");
+    const [index, setIndex] = useState<number>(0);
+    const myText: string = "🐣 Bonne vacances les Pious Pious 🐣";
+    const destructuredText: string[] = myText.split("");
 
     useEffect(() => {
-        if (i < destructuredText.length - 1) {
+        if (index < destructuredText.length) {
             setTimeout(() => {
-                setTyping(typing + destructuredText[i]);
-                i++;
-            }, 1000);
+                setTyping(typing + destructuredText[index]);
+                setIndex(index + 1);
+            }, 100);
         }
     });
 
-    return <p>{typing}</p>;
+    return (
+        <div className="flex">
+            <p>{typing}</p>
+            <div className="inline bg-amber-50 w-0.5 h-4 ml-1 mt-1 animate-pulse" ></div>
+        </div>
+    );
 };
 
 export default TypingEffect;
