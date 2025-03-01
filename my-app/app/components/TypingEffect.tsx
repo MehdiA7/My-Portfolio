@@ -1,49 +1,25 @@
 "use client";
 import React from "react";
+import { useState, useEffect } from "react";
+
+// I'm stopped here
 
 const TypingEffect = () => {
+    const [typing, setTyping] = useState("");
+    const [index, setIndex] = useState(0);
     const myText: string = "godeff is Mehdi lol";
+    const destructuredText: string[] = myText.split("")
 
-    const destructuredText: string[] = myText.split("");
+    useEffect(() => {
+        if (i < destructuredText.length - 1) {
+            setTimeout(() => {
+                setTyping(typing + destructuredText[i]);
+                i++;
+            }, 1000);
+        }
+    });
 
-    let intervalId: any = null;
-
-    const startInterval = () => {
-        // if (intervalId === null) {
-        //     intervalId = setInterval(() => {
-        //         console.log("Hello les gens");
-        //     }, 1000);
-        // }
-    };
-
-    const stopInterval = () => {
-        // if (intervalId !== null) {
-        //     clearInterval(intervalId);
-        //     intervalId = null;
-        // }
-    };
-
-    return (
-        <>
-            <button onClick={() => startInterval()}>Start</button>
-            <br />
-            <button onClick={() => stopInterval()}>Stop</button>
-            <br />
-            {intervalId = setInterval(() => {
-                {destructuredText.forEach(element => {
-                    
-                });}
-            }, 1000)
-            }
-            <br />
-            <button
-                onClick={() => console.log(destructuredText)}
-                className="bg-amber-700 w-20"
-            >
-                Log
-            </button>
-        </>
-    );
+    return <p>{typing}</p>;
 };
 
 export default TypingEffect;
