@@ -10,13 +10,13 @@ const WelcomeMessage = () => {
                     // Same substring at the start will only be typed out once, initially
                     "<Mehdi-Godefroid />",
                     1000, // wait 1s before replacing "Mice" with "Hamsters"
-                    "🔨 Site en construction 🔨",
+                    "🔨 Work in progress...🔨",
                     1000,
                 ]}
                 wrapper="h1"
                 speed={1}
                 style={{
-                    fontSize: "2em",
+                    fontSize: "1.7em",
                     display: "inline-block",
                     textAlign: "center",
                 }}
