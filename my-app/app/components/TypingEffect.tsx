@@ -2,6 +2,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
+// this is my home made component to make type effect 
+
 const TypingEffect = () => {
     const [typing, setTyping] = useState<string>("");
     const [index, setIndex] = useState<number>(0);
