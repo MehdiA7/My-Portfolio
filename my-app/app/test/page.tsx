@@ -1,28 +1,82 @@
 "use client";
-import React, { useEffect }from "react";
+import React from "react";
+import { ReactLenis, useLenis } from "lenis/react";
 
 const TestPage = () => {
-
-    useEffect(() => {
-        (async () => {
-            const LocomotiveScroll = (await import("locomotive-scroll"))
-                .default;
-
-            const locomotiveScroll = new LocomotiveScroll();
-        })();
-    }, []);
-
+    const lenis = useLenis(({ scroll }) => {
+        // called every scroll
+      })
     return (
-        <>
-            <div className="bg-amber-300 h-[200] m-4"></div>
-            <div className="bg-amber-300 h-[200] m-4"></div>
-            <div className="bg-amber-300 h-[200] m-4"></div>
-            <div className="bg-amber-300 h-[200] m-4"></div>
-            <div className="bg-amber-300 h-[200] m-4"></div>
-            <div className="bg-amber-300 h-[200] m-4"></div>
-            <div className="bg-amber-300 h-[200] m-4"></div>
-            <div className="bg-amber-300 h-[200] m-4"></div>
-        </>
+        <ReactLenis root>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+            <div className="bg-amber-300 h-[50] m-4"></div>
+        </ReactLenis>
     );
 };
 
